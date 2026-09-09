@@ -126,8 +126,8 @@ npm run dev
 访问终端显示的本地地址。可直接修改 `app/page.tsx`、`app/general-template.tsx` 与 `app/globals.css`。
 
 ```bash
-npm test         # 文本解析、模板填充和文档生成测试
-npm run build    # 生成 dist/ 静态文件
+npm run build    # 生成 dist/ 静态文件（样式测试需要构建产物）
+npm test         # 文本解析、模板填充、文档生成和样式测试
 npm run preview  # 本地检查生产构建
 ```
 
@@ -140,7 +140,7 @@ npm run preview  # 本地检查生产构建
 1. 在 GitHub 创建公开仓库（建议名称 `wenban-office`），将本项目推送到 `main` 分支。
 2. 打开 **Settings → Pages**，将 **Build and deployment → Source** 设置为 **GitHub Actions**。
 3. 如果工作流未自动运行，进入 **Actions → Deploy GitHub Pages → Run workflow** 手动触发。
-4. 工作流将安装锁定依赖、执行测试、构建静态文件并部署 `dist/`。
+4. 工作流将安装锁定依赖、构建静态文件、执行测试并部署 `dist/`。
 5. 等待 `build` 和 `deploy` 两个任务成功，在 **Settings → Pages** 打开访问链接，并更新本 README 的「在线访问」。
 6. 后续每次推送到 `main` 自动重新部署。Fork 后也需在自己的仓库启用 Pages/Actions。
 
@@ -191,6 +191,6 @@ npm run preview  # 本地检查生产构建
 
 ## 贡献与许可证
 
-欢迎提交 Issue 和 Pull Request。报告问题时请说明浏览器、操作步骤、实际结果和预期结果；示例模板/名单请使用虚构数据，勿上传真实个人信息。修改后请运行 `npm test` 与 `npm run build`。
+欢迎提交 Issue 和 Pull Request。报告问题时请说明浏览器、操作步骤、实际结果和预期结果；示例模板/名单请使用虚构数据，勿上传真实个人信息。修改后请运行 `npm run build` 与 `npm test`。
 
 本项目原创代码采用 [MIT License](LICENSE)，允许使用、修改和分发。第三方依赖及其许可证仍归各自作者所有；MIT 授权不重新授权用户自行上传的模板、字体、图片或其他素材。
