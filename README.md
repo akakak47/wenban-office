@@ -6,9 +6,9 @@
 
 ## 在线访问
 
-GitHub Pages 公共站点尚未发布，发布成功后将把实际访问链接写在这里。请勿把下方地址格式当作已上线链接。
+**在线使用：[文伴 WENBAN · 批量文档工作台](https://akakak47.github.io/wenban-office/)**
 
-项目站点的默认地址格式为 `https://<GitHub用户名>.github.io/<仓库名>/`。部署完成后，可在仓库 **Settings → Pages → Visit site** 查看实际链接，或打开部署工作流的 `github-pages` 环境链接。
+源码仓库：[akakak47/wenban-office](https://github.com/akakak47/wenban-office)。已通过 GitHub Actions 完成 GitHub Pages 部署，后续推送到 `main` 会自动重新构建、测试并发布。
 
 ## 功能概览
 
